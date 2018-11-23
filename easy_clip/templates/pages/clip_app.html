@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+ 
+<button class="btn-primary" style="border-radius:8px;"  onclick="copyToClipboard('#p1')">Copy Data</button>
+<button class="btn-primary"  style="border-radius:8px;" onclick="copyToClipboard('#p2')">Copy Labels</button>
+<hr/>
+<div class="container">
+    <h2>Data</h2>
+    <div class="panel panel-default">
+      <div class="panel-body" id="p1">
+            <code class="prettyprint">
+        <span>
+ <!-- Insert data here -->
+    </span>
+        </code>
+      </div>
+    </div>
+  <br>
+</div>
+<br>
+
+<div class="container">
+        <h2>Labels</h2>
+        <div class="panel panel-default">
+          <div class="panel-body" id="p2">
+                <code class="prettyprint">
+            <span>
+ <!-- Insert label data here -->
+                </span>
+            </code>
+          </div>
+        </div>
+      <br>
+    </div>
+
+{% endblock content %}
+
+
+
+    
